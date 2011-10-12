@@ -1,6 +1,6 @@
 <?php
 
-namespace Bisna\Exception;
+namespace ZFDoctrine2\Exception;
 
 /**
  * NameNotFoundException class.
