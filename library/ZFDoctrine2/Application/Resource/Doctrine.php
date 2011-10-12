@@ -423,7 +423,7 @@ class Doctrine extends \Zend_Application_Resource_ResourceAbstract
 	 *
 	 * @return Doctrine\ORM\EntityManager
 	 */
-	private function _startORMEntityManager(array $config = array())
+	protected function _startORMEntityManager(array $config = array())
 	{
 		if (isset($config['entityManagerClass'])) {
 			$entityManagerClass = $config['entityManagerClass'];
