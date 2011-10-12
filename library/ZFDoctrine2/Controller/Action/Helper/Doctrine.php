@@ -76,7 +76,7 @@ class Doctrine
 	 */
 	public function getEntityManager($emName = null)
 	{
-		$this->_getResource()->getEntityManager($emName);
+		return $this->_getResource()->getEntityManager($emName);
 	}
 
 	/**
@@ -86,7 +86,7 @@ class Doctrine
 	 */
 	public function getEntityManagerNames()
 	{
-		$this->_getResource()->getEntityManagerNames();
+		return $this->_getResource()->getEntityManagerNames();
 	}
 
 	/**
