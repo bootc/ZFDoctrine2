@@ -331,7 +331,7 @@ class Doctrine extends \Zend_Application_Resource_ResourceAbstract
 		$types = $config['types'];
 
 		foreach ($types as $name => $className) {
-			Type::addType($name, $className);
+			Type::overrideType($name, $className);
 		}
 
 		return $configuration;
