@@ -110,7 +110,7 @@ class Doctrine
 		if (!$this->_resource) {
 			$controller = $this->getActionController();
 			$bootstrap = $controller->getInvokeArg('bootstrap');
-			$this->_resource = $bootstrap->getResource('doctrine');
+			$this->_resource = $bootstrap->getPluginResource('doctrine');
 		}
 
 		return $this->_resource;
