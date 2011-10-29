@@ -66,7 +66,7 @@ class Doctrine extends \Zend_Application_Resource_ResourceAbstract
 	 */
 	public function init()
 	{
-		return $this;
+		return $this->getEntityManager();
 	}
 
 	/**
