@@ -12,6 +12,17 @@ class Doctrine
 	protected $_resource;
 
 	/**
+	 * Helper function to return an entity manager.
+	 *
+	 * @param string $emName
+	 * @return \Doctrine\ORM\EntityManager
+	 */
+	public function direct($emName = null)
+	{
+		return $this->getEntityManager($emName);
+	}
+
+	/**
 	 * Retrieve DBAL Connection based on its name. If no argument is provided,
 	 * it will attempt to get the default Connection.
 	 * If DBAL Connection name could not be found, NameNotFoundException is thrown.
